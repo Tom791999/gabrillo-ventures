@@ -1,0 +1,45 @@
+/* Basic, mobile-first styles */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f6fa;
+  color: #222;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Card-like header */
+.site-header {
+  background: #2b7a78;
+  color: #fff;
+  padding: 20px 16px;
+  border-radius: 10px;
+}
+
+/* Responsive logo */
+.logo {
+  display: block;
+  margin: 0 auto 12px auto;
+  width: 350px;     /* desktop default */
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Main content */
+.main-content {
+  margin-top: 18px;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Smaller screens adjustments */
+@media (max-width: 600px) {
+  .logo { width: 110px; }
+  .main-content { font-size: 16px; padding: 0 8px; }
+  .site-header { padding: 16px; }
+}
